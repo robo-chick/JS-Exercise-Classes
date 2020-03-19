@@ -145,7 +145,7 @@ class Instructor extends Lambdasian{
     return `Today we are learning about ${subject}.`;
   }
   grade(student, subject){
-    return `${this.name} receives a perfect score on ${subject}.`
+    return `${student.name} receives a perfect score on ${subject}.`
   }
 }
 
@@ -172,7 +172,7 @@ class Student extends Lambdasian{
     this.favSubjects = attrs.favSubjects
   }
   listSubjects(){
-    return `${this.favSubjects}`;
+    return `Loving ${this.favSubjects}`;
   }
   PRAssignment(subject){
     return `${this.name} has submitted a PR for ${subject}`;
@@ -205,7 +205,7 @@ class ProjectManager extends Instructor{
     return `${this.name} announces to ${channel}, @ cahnnel standy times!`;
   }
   debugsCode(student, subject){
-    return `${this.name} debugs ${this.name} code on ${subject}`
+    return `${this.name} debugs ${student.name} code on ${subject}`;
   }
 }
 
